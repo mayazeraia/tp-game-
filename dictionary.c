@@ -36,13 +36,14 @@ return dict_size;
 }
 // verification si un mot est valide
 
-bool is_valid_word(const char *w) {
-  for (int i = 0; i < dict_size ; i++){
-    if (strcmp(dictionary[i],w) == 0)
-      return true;
+bool is_valid_word(const char *w) {  //Cette fonction permet de valider qu’un mot proposé est bien dans le dictionnaire, avant d'être utilisé par le solver ou par le joueur
+  for (int i = 0; i < dict_size ; i++){  // On parcourt tous les mots du dictionnaire
+    if (strcmp(dictionary[i],w) == 0) // compare le mot du dictionnaire avec le mot passé en paramètre w.
+      return true; 
 }
-return false;
+return false; // Si le mot n'existe pas dans le dictionnaire 
 }
+
 // libérer le dictionnaire
 void free_dictionary(void) {
   if (!dictionary) return ;
