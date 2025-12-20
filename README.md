@@ -1,26 +1,127 @@
-# Wordle Game & Solveur — ALGO3 L2 ISIL
+ 🎮 WORDLE GAME & SOLVEUR
+🧠 ALGO3 — L2 ISIL
 
- Projet réalisé dans le cadre du module ** ALGO3 (Langage C) ** - Département Informatique , USTHB
- 
-Ce projet implémente le célèbre jeu Wordle en langage C , avec deux modes de fonctionnement : 
+📘 PROJET RÉALISÉ DANS LE CADRE DU MODULE ALGO3 (LANGAGE C)
+🏫 DÉPARTEMENT INFORMATIQUE — USTHB
 
-1. **Joueur humain**  : le joueur doit denviner un mot secret de 5 lettres en un nombre limité de tentatives  (6 essais).
-- Le programme choisit aléatoirement un mot dans un dictionnaire ( word.txt ).
-- Chaque proposition du joueur est vérifiée pour s'asurer qu'elle est valide (présente dans le dictionnaire ).
-- Après chaque essai , le programme fournit un feedback pour chaque lettre.
+🎯 OBJECTIF DU PROJET🎯
 
-2. **Solveur automatique** : le programme peut aussi deviner le mot secret a votre place en utilisant une **stratégie logique** basée sue le feedback.
-  - Le solveur parcourt le dictionnaire pour filtrer les mots  incompatibles avec le feedback recu.
-  - Il utilise des structure comme 'min_count' , 'max_count' , 'correct_pos' et 'wrong_pos' pour suivre les contraintes sur les lettres.
-  - A chaque tour , il choisit le mot le plus prometteur et répète le processus jusqu'a trouver le mot correct.
+Ce projet consiste en l’implémentation complète du jeu Wordle en langage C, intégrant un mode joueur humain ainsi qu’un solveur automatique intelligent capable de deviner le mot secret en un nombre réduit de tentatives.
 
-## Objectif du projet
+🎯 Les objectifs principaux sont :
 
-Ce projet a pour but de mettre en pratique les concepts d'algorithmes , de structures de donées et de gestion de mémoire en langage C a travers un jeu interactif .
+Permettre à un utilisateur de jouer à Wordle en ligne de commande, avec un feedback précis.
 
-Il permet de :
-- Jouer au **wordle** en ligne de commande avec un feedback précis pour chaque lettre.
-- Tester un **Solveur automatique** capable de deviner le mot secret en utilisant le feedback pour filtrer les mots incompatibles.
-- Appliquer la **programmation modulaire** et la **gestion dynamique de la mémoire** pour gérer le dictionnaire et les mots condidats.
+Mettre en œuvre un solveur logique capable de résoudre automatiquement une grille Wordle.
 
+🚀 FONCTIONNALITÉS🚀
+👤 MODE JEU HUMAIN
+
+Le joueur doit deviner un mot secret de 5 lettres.
+
+Le mot est choisi aléatoirement par l’ordinateur depuis un dictionnaire externe (word.txt).
+
+Le joueur dispose de 6 tentatives maximum.
+
+Chaque mot proposé est vérifié afin de s’assurer qu’il est valide (présent dans le dictionnaire).
+
+Après chaque essai, un feedback coloré est affiché pour chaque lettre.
+
+La partie se termine lorsque le mot est trouvé ou que le nombre maximum d’essais est atteint.
+
+
+🤖 MODE SOLVEUR AUTOMATIQUE
+
+Le programme peut deviner automatiquement le mot secret à la place de l’utilisateur.
+
+Il utilise une stratégie logique basée sur le feedback reçu à chaque tentative.
+
+Le solveur parcourt le dictionnaire afin de filtrer les mots incompatibles.
+
+Il exploite plusieurs structures de contraintes :
+
+min_count : nombre minimum d’occurrences d’une lettre
+
+max_count : nombre maximum d’occurrences d’une lettre
+
+correct_pos : lettres bien placées
+
+wrong_pos : lettres mal placées
+
+À chaque tour, le mot le plus prometteur est sélectionné jusqu’à trouver la solution.
+
+📚 GESTION DU DICTIONNAIRE
+
+Chargement dynamique des mots depuis un fichier texte externe.
+
+Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats.
+
+🎨 INTERFACE COLORÉE (TERMINAL)🎨
+
+Utilisation des codes couleurs ANSI pour afficher le feedback :
+
+🟩 Vert 
+
+🟨 Jaune 
+
+⬜ Gris 
+
+⚙️ASPECTS TECHNIQUES ⚙️
+
+Langage utilisé : C
+
+Programmation modulaire (.c / .h)
+
+Utilisation de la mémoire dynamique
+
+Manipulation de fichiers
+
+Affichage coloré via les codes ANSI
+
+🖥️ MULTIPLATEFORME🖥️
+
+Programme compatible avec Windows et Linux.
+
+📏 RÈGLES DU JEU WORDLE 📏
+
+🔤 Le mot secret contient WORD_LEN lettres (5 lettres).
+
+À chaque essai, un feedback est donné :
+
+🟩 VERT : lettre correcte à la bonne position
+
+🟨 JAUNE : lettre correcte mais mal positionnée
+
+⬜ GRIS : lettre absente du mot
+
+⏳ Le joueur dispose de MAX_GUESSES tentatives (6 essais).
+
+⚙️ MODES DE JEU
+
+👤 MODE JOUEUR HUMAIN
+
+L’utilisateur tente de deviner le mot secret en un maximum de 6 essais.
+
+🤖 MODE SOLVEUR LOGIQUE
+
+Le programme applique une stratégie algorithmique optimisée afin de trouver le mot secret avec le minimum d’essais possible.
+
+👨‍💻 AUTEURS
+
+📌 PROJET RÉALISÉ PAR :
+
+ -Zeraia Maya
+
+ -Belabed Imene Zohra
+
+ -Guettache Cerine
+
+🧩 COMPÉTENCES MISES EN PRATIQUE
+
+✔️ Algorithmes
+✔️ Structures de données
+✔️ Programmation modulaire en langage C
+✔️ Gestion dynamique de la mémoire
+✔️ Manipulation de fichiers
+✔️ Résolution de problèmes logiques
 
