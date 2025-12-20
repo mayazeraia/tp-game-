@@ -82,7 +82,11 @@ Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats
 # 🖥️ MULTIPLATEFORME🖥️
 
 Programme compatible avec Windows et Linux.
-
+   # 🎥  COMPILATION ET EXECUTION  🎥:
+# COMPILER:
+// on mets ici le gcc
+# LANCER LE JEU :
+// le lien 
 ## 📏 RÈGLES DU JEU WORDLE 📏:
 
 🔤 Le mot secret contient WORD_LEN lettres (5 lettres).
