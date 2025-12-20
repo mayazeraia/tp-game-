@@ -1,10 +1,10 @@
-# 🎮 WORDLE GAME & SOLVEUR
+# 🎮 WORDLE GAME & SOLVEUR🎮
 🧠 ALGO3 — L2 ISIL
 
 📘 PROJET RÉALISÉ DANS LE CADRE DU MODULE ALGO3 (LANGAGE C)
 🏫 DÉPARTEMENT INFORMATIQUE — USTHB
 
-🎯 OBJECTIF DU PROJET🎯
+# 🎯 OBJECTIF DU PROJET🎯
 
 Ce projet consiste en l’implémentation complète du jeu Wordle en langage C, intégrant un mode joueur humain ainsi qu’un solveur automatique intelligent capable de deviner le mot secret en un nombre réduit de tentatives.
 
@@ -14,8 +14,8 @@ Permettre à un utilisateur de jouer à Wordle en ligne de commande, avec un fee
 
 Mettre en œuvre un solveur logique capable de résoudre automatiquement une grille Wordle.
 
-🚀 FONCTIONNALITÉS🚀
-👤 MODE JEU HUMAIN
+#    🚀 FONCTIONNALITÉS🚀
+# 👤 MODE JEU HUMAIN
 
 Le joueur doit deviner un mot secret de 5 lettres.
 
@@ -30,7 +30,7 @@ Après chaque essai, un feedback coloré est affiché pour chaque lettre.
 La partie se termine lorsque le mot est trouvé ou que le nombre maximum d’essais est atteint.
 
 
-🤖 MODE SOLVEUR AUTOMATIQUE
+# 🤖 MODE SOLVEUR AUTOMATIQUE
 
 Le programme peut deviner automatiquement le mot secret à la place de l’utilisateur.
 
@@ -50,7 +50,7 @@ wrong_pos : lettres mal placées
 
 À chaque tour, le mot le plus prometteur est sélectionné jusqu’à trouver la solution.
 
-📚 GESTION DU DICTIONNAIRE
+# 📚 GESTION DU DICTIONNAIRE
 
 Chargement dynamique des mots depuis un fichier texte externe.
 
@@ -66,7 +66,7 @@ Utilisation des codes couleurs ANSI pour afficher le feedback :
 
 ⬜ Gris 
 
-⚙️ASPECTS TECHNIQUES ⚙️
+# ⚙️ASPECTS TECHNIQUES ⚙️
 
 Langage utilisé : C
 
@@ -78,11 +78,11 @@ Manipulation de fichiers
 
 Affichage coloré via les codes ANSI
 
-🖥️ MULTIPLATEFORME🖥️
+# 🖥️ MULTIPLATEFORME🖥️
 
 Programme compatible avec Windows et Linux.
 
-📏 RÈGLES DU JEU WORDLE 📏
+## 📏 RÈGLES DU JEU WORDLE 📏
 
 🔤 Le mot secret contient WORD_LEN lettres (5 lettres).
 
@@ -106,7 +106,7 @@ L’utilisateur tente de deviner le mot secret en un maximum de 6 essais.
 
 Le programme applique une stratégie algorithmique optimisée afin de trouver le mot secret avec le minimum d’essais possible.
 
-👨‍💻 AUTEURS
+# 👨‍💻 AUTEURS
 
 📌 PROJET RÉALISÉ PAR :
 
@@ -116,7 +116,7 @@ Le programme applique une stratégie algorithmique optimisée afin de trouver le
 
  -Guettache Cerine
 
-🧩 COMPÉTENCES MISES EN PRATIQUE
+# 🧩 COMPÉTENCES MISES EN PRATIQUE 🧩
 
 ✔️ Algorithmes
 ✔️ Structures de données
