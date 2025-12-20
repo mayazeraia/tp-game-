@@ -111,9 +111,8 @@ L’utilisateur tente de deviner le mot secret en un maximum de 6 essais.
 
 Le programme applique une stratégie algorithmique optimisée afin de trouver le mot secret avec le minimum d’essais possible.
 
-# 👨‍💻 AUTEURS
 
-📌 PROJET RÉALISÉ PAR :
+# 📌 PROJET RÉALISÉ PAR :
 
  -Zeraia Maya
 
