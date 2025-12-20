@@ -1,10 +1,9 @@
-# 🎮 WORDLE GAME & SOLVEUR🎮
+#                          🎮 WORDLE GAME & SOLVEUR 🎮
 🧠 ALGO3 — L2 ISIL
-
 📘 PROJET RÉALISÉ DANS LE CADRE DU MODULE ALGO3 (LANGAGE C)
 🏫 DÉPARTEMENT INFORMATIQUE — USTHB
 
-# 🎯 OBJECTIF DU PROJET🎯
+# 🎯 OBJECTIF DU PROJET🎯 :
 
 Ce projet consiste en l’implémentation complète du jeu Wordle en langage C, intégrant un mode joueur humain ainsi qu’un solveur automatique intelligent capable de deviner le mot secret en un nombre réduit de tentatives.
 
@@ -17,7 +16,7 @@ Ce projet consiste en l’implémentation complète du jeu Wordle en langage C, 
 #    🚀 FONCTIONNALITÉS:
 
 
-# 👤 MODE JEU HUMAIN 👤
+# 👤 MODE JEU HUMAIN 👤 :
 
 Le joueur doit deviner un mot secret de 5 lettres.
 
@@ -32,7 +31,7 @@ Après chaque essai, un feedback coloré est affiché pour chaque lettre.
 La partie se termine lorsque le mot est trouvé ou que le nombre maximum d’essais est atteint.
 
 
-# 🤖 MODE SOLVEUR AUTOMATIQUE 🤖
+# 🤖 MODE SOLVEUR AUTOMATIQUE 🤖:
 
 Le programme peut deviner automatiquement le mot secret à la place de l’utilisateur.
 
@@ -52,13 +51,13 @@ wrong_pos : lettres mal placées
 
 À chaque tour, le mot le plus prometteur est sélectionné jusqu’à trouver la solution.
 
-# 📚 GESTION DU DICTIONNAIRE
+# 📚 GESTION DU DICTIONNAIRE:
 
 -Chargement dynamique des mots depuis un fichier texte externe.
 
 Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats.
 
-# 🎨 INTERFACE COLORÉE (TERMINAL)🎨
+# 🎨 INTERFACE COLORÉE (TERMINAL) 🎨:
 
 -Utilisation des codes couleurs ANSI pour afficher le feedback :
 
@@ -68,7 +67,7 @@ Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats
 
 ⬜ Gris 
 
-# ⚙️ASPECTS TECHNIQUES ⚙️
+# ⚙️ASPECTS TECHNIQUES ⚙️:
 
 -Langage utilisé : C
 
@@ -84,7 +83,7 @@ Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats
 
 Programme compatible avec Windows et Linux.
 
-## 📏 RÈGLES DU JEU WORDLE 📏
+## 📏 RÈGLES DU JEU WORDLE 📏:
 
 🔤 Le mot secret contient WORD_LEN lettres (5 lettres).
 
@@ -120,10 +119,15 @@ Le programme applique une stratégie algorithmique optimisée afin de trouver le
 
 # 🧩 COMPÉTENCES MISES EN PRATIQUE 🧩
 
-✔️ Algorithmes
+✔️ Algorithmes 
+
 ✔️ Structures de données
+
 ✔️ Programmation modulaire en langage C
+
 ✔️ Gestion dynamique de la mémoire
+
 ✔️ Manipulation de fichiers
+
 ✔️ Résolution de problèmes logiques
 
