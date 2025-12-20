@@ -157,26 +157,27 @@ int solver_user_feedback()
 } 
 
 /* ---------------- Joueur humain ---------------- */
+// Cette fonction utilise que trois fonction , is_valid_word ; compute_feedback ; print_feedback
 void human_play()
 {
-    srand((unsigned)time(NULL));
+    srand((unsigned)time(NULL)); 
     int idx = rand() % dict_size;
-    char *target = dictionary[idx];
+    char *target = dictionary[idx]; // target:le mot secret que le joueur doit trouver 
 
-    char guess[64];
+    char guess[64]; //guess:c'est un tableau qui va contenir le mot que le joueur propose a chaque tour
 
     printf("\nDevinez le mot (%d lettres)\n", WORD_LEN);
 
-    for (int t = 1; t <= MAX_GUESSES; t++)
+    for (int t = 1; t <= MAX_GUESSES; t++) //chaque tour correspond a un essai du joueur , et le joueur a un nombre limite de tentatives (MAX_GUESSES)
     {
         printf("Essai %d> ", t);
-        if (scanf("%63s", guess) != 1)
+        if (scanf("%63s", guess) != 1) //Lire le mot proposé par le joueur 
         {
             printf("Erreur lecture\n");
             return;
         }
 
-        if ((int)strlen(guess) != WORD_LEN)
+        if ((int)strlen(guess) != WORD_LEN) //Verifier que la longueur correspond a WORD_LEN 
         {
             printf("Mot de %d lettres !\n", WORD_LEN);
             t--;
@@ -186,7 +187,7 @@ void human_play()
         for (int i = 0; i < WORD_LEN; i++)
             guess[i] = tolower((unsigned char)guess[i]);
 
-        if (!is_valid_word(guess))
+        if (!is_valid_word(guess)) // verifier que le mot existe dans le dictionnaire 
         {
             printf("Mot invalide\n");
             t--;
@@ -194,15 +195,15 @@ void human_play()
         }
 
         Color c[WORD_LEN];
-        compute_feedback(guess, target, c);
-        print_feedback(guess, c);
+        compute_feedback(guess, target, c); //il compare le mot propose avec le mot secret et retourne les couleurs pour chaque lettre 
+        print_feedback(guess, c); // affiche les couleurs au joueur 
 
-        if (strcmp(guess, target) == 0)
+        if (strcmp(guess, target) == 0) //Si le mot proposé est exactement le mot secret le joueur gagne 
         {
             printf("Bravo ! Trouvé en %d essais !\n", t);
             return;
         }
     }
 
-    printf("Perdu ! Mot = %s\n", target);
+    printf("Perdu ! Mot = %s\n", target); // sinon perdue 
 }
