@@ -10,12 +10,14 @@ Ce projet consiste en l’implémentation complète du jeu Wordle en langage C, 
 
 🎯 Les objectifs principaux sont :
 
-Permettre à un utilisateur de jouer à Wordle en ligne de commande, avec un feedback précis.
+-Permettre à un utilisateur de jouer à Wordle en ligne de commande, avec un feedback précis.
 
-Mettre en œuvre un solveur logique capable de résoudre automatiquement une grille Wordle.
+-Mettre en œuvre un solveur logique capable de résoudre automatiquement une grille Wordle.
 
-#    🚀 FONCTIONNALITÉS🚀
-# 👤 MODE JEU HUMAIN
+#    🚀 FONCTIONNALITÉS:
+
+
+# 👤 MODE JEU HUMAIN 👤
 
 Le joueur doit deviner un mot secret de 5 lettres.
 
@@ -30,7 +32,7 @@ Après chaque essai, un feedback coloré est affiché pour chaque lettre.
 La partie se termine lorsque le mot est trouvé ou que le nombre maximum d’essais est atteint.
 
 
-# 🤖 MODE SOLVEUR AUTOMATIQUE
+# 🤖 MODE SOLVEUR AUTOMATIQUE 🤖
 
 Le programme peut deviner automatiquement le mot secret à la place de l’utilisateur.
 
@@ -52,13 +54,13 @@ wrong_pos : lettres mal placées
 
 # 📚 GESTION DU DICTIONNAIRE
 
-Chargement dynamique des mots depuis un fichier texte externe.
+-Chargement dynamique des mots depuis un fichier texte externe.
 
 Utilisation de la mémoire dynamique pour gérer efficacement les mots candidats.
 
-🎨 INTERFACE COLORÉE (TERMINAL)🎨
+# 🎨 INTERFACE COLORÉE (TERMINAL)🎨
 
-Utilisation des codes couleurs ANSI pour afficher le feedback :
+-Utilisation des codes couleurs ANSI pour afficher le feedback :
 
 🟩 Vert 
 
@@ -68,15 +70,15 @@ Utilisation des codes couleurs ANSI pour afficher le feedback :
 
 # ⚙️ASPECTS TECHNIQUES ⚙️
 
-Langage utilisé : C
+-Langage utilisé : C
 
-Programmation modulaire (.c / .h)
+-Programmation modulaire (.c / .h)
 
-Utilisation de la mémoire dynamique
+-Utilisation de la mémoire dynamique
 
-Manipulation de fichiers
+-Manipulation de fichiers
 
-Affichage coloré via les codes ANSI
+-Affichage coloré via les codes ANSI
 
 # 🖥️ MULTIPLATEFORME🖥️
 
